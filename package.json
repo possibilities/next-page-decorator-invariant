@@ -1,0 +1,48 @@
+{
+  "name": "next-page-decorator-invariant",
+  "description": "A decorator warns developers about incorrect usage of Next.js page decorators",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/possibilities/next-page-decorator-invariant",
+    "type": "git"
+  },
+  "author": "Mike Bannister <mikebannister@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "6.x.x"
+  },
+  "scripts": {
+    "dev": "rimraf lib && babel src --out-dir lib --watch",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "prepublish": "rimraf lib && babel src --out-dir lib",
+    "test": "echo TODO",
+    "lint": "standard",
+    "pretest": "standard"
+  },
+  "main": "lib/decorators/PageDecoratorInvariant.js",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "next": "^2.1.1",
+    "react": "^15.5.3",
+    "react-dom": "^15.5.3",
+    "rimraf": "^2.6.1",
+    "standard": "^10.0.1"
+  },
+  "peerDependencies": {
+    "next": ">=2.1.1"
+  },
+  "babel": {
+    "presets": [
+      "next/babel",
+      "latest"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
