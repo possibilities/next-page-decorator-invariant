@@ -19,7 +19,7 @@
     "lint": "standard",
     "pretest": "standard"
   },
-  "main": "lib/decorators/PageDecoratorInvariant.js",
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
