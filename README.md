@@ -1,6 +1,6 @@
 # Next.js page decorator invariant helper [![CircleCI](https://circleci.com/gh/possibilities/next-page-decorator-invariant.svg?style=svg)](https://circleci.com/gh/possibilities/next-page-decorator-invariant)
 
-A decorator warns developers about incorrect usage of [Next.js](https://github.com/zeit/next.js) page decorators
+A decorator that warns developers about incorrect usage of [Next.js](https://github.com/zeit/next.js) page decorators
 
 ## Summary
 
