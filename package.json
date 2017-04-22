@@ -44,5 +44,8 @@
   },
   "standard": {
     "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "invariant": "^2.2.2"
   }
 }
