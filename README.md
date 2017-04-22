@@ -14,14 +14,17 @@ When developing reusable decorators that target Next.js pages (which may or may 
     yarn add next-page-decorator-invariant
     ```
 
-1. Wrap the decorator's entrypoint
+1. Use the decorator
 
-    Configure decorator and export it, you'll use this to wrap all your pages:
+    Configure the decorator and use it inside your decorator
 
     ```
-    // index.js
-    import PageDecoratorInvariant from 'next-decorator-invariant'
-    import MyDecorator from './decorators/MyDecorator'
+    // decorators/FooDecorator.js
+    import PageDecoratorInvariant from 'next-page-decorator-invariant'
+    const pageDecoratorInvariant = PageDecoratorInvariant('FooDecorator')
 
-    export default PageDecoratorInvariant(MyDecorator)
+    default export Page => {
+      const WrappedPage = pageDecoratorInvariant(Page)
+      return props => <WrappedPage {...props} />
+    }
     ```
