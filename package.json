@@ -1,7 +1,7 @@
 {
   "name": "next-page-decorator-invariant",
   "description": "A decorator warns developers about incorrect usage of Next.js page decorators",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "url": "https://github.com/possibilities/next-page-decorator-invariant",
     "type": "git"
